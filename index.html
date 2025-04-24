@@ -131,23 +131,181 @@
     </div>
     
     
-    <!-- Modal 1 -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" data-modal="modal1">&times;</span>
-            <h3>Plus de détails sur le Easydealz</h3>
-            <p>Explication détaillée sur le Easydealz...</p>
-        </div>
+   <!-- Modal 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="modal1">&times;</span>
+        <h3>🎯 Plus de détails sur le projet EasyDealz</h3>
+
+        <p><strong>EasyDealz</strong> est une application e-commerce développée avec Symfony, offrant une structure back-end robuste, une base de données MySQL, une gestion sécurisée des utilisateurs et des produits, et une interface moderne. Le projet est axé sur l’expérience utilisateur, le SEO, la sécurité et la conformité RGPD.</p>
+
+        <h4>🧱 Structure du projet</h4>
+        <ul>
+            <li><strong>Framework :</strong> Symfony 7.1.*</li>
+            <li><strong>Base de données :</strong> MySQL (PHPMyAdmin en local, Railway en ligne)</li>
+            <li><strong>Langages :</strong> PHP, HTML, CSS, JavaScript (avec TailwindCSS)</li>
+            <li><strong>Système de templates :</strong> Twig</li>
+            <li><strong>Stockage des images :</strong> Upload local (produits et profils)</li>
+            <li><strong>Entités :</strong> User, Product, Category, Videogame, DVD, Phones, Cart, CartItem, Order, OrderItem</li>
+        </ul>
+
+        <h4>👤 Fonctionnalités utilisateur</h4>
+        <ul>
+            <li>Inscription et connexion avec formulaire personnalisé</li>
+            <li>Page de profil avec modification des données</li>
+            <li>Email de validation + email de confirmation d'inscription</li>
+            <li>Visite des profils publics d'autres utilisateurs</li>
+            <li>Thème clair / sombre activable par bouton</li>
+        </ul>
+
+        <h4>🛍️ Fonctionnalités e-commerce</h4>
+        <ul>
+            <li>Produits classés par catégories : Jeux vidéo, Téléphones, DVD</li>
+            <li>Création / modification de produits par les vendeurs</li>
+            <li>Gestion de collections publiques / privées</li>
+            <li>Base prête pour :
+                <ul>
+                    <li>Panier (Cart, CartItem)</li>
+                    <li>Commandes (Order, OrderItem)</li>
+                    <li>Système de paiement à venir</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>🖼️ Interface utilisateur</h4>
+        <ul>
+            <li>Responsive (desktop & mobile)</li>
+            <li>Design moderne avec Flexbox, Grid et Tailwind</li>
+            <li>Composants réutilisables : cartes, boutons, etc.</li>
+            <li>Google Fonts intégré (Inter)</li>
+        </ul>
+
+        <h4>🧪 Tests & sécurité</h4>
+        <ul>
+            <li>Tests unitaires avec PHPUnit</li>
+            <li>Contrôle des accès (ex : collections privées uniquement modifiables par leur propriétaire)</li>
+            <li>Tests de sécurité en cours</li>
+            <li>Mise en conformité RGPD</li>
+        </ul>
+
+        <h4>🌐 SEO & Accessibilité</h4>
+        <ul>
+            <li>Travail en cours sur le SEO</li>
+            <li>Structuration sémantique du HTML</li>
+            <li>Préparation des balises `title`, `meta`, etc.</li>
+        </ul>
+
+        <h4>🐳 Déploiement</h4>
+        <ul>
+            <li>Docker pour l’environnement de dev</li>
+            <li>Render pour l’hébergement</li>
+            <li>Base distante via Railway</li>
+        </ul>
+
+        <h4>🛠️ Fonctionnalités à venir</h4>
+        <ul>
+            <li>Système de paiement (Stripe ou PayPal)</li>
+            <li>Finalisation du module de commande</li>
+            <li>Filtres et tri des produits</li>
+            <li>Messagerie ou notation entre vendeurs et acheteurs</li>
+            <li>Suppression de compte et cookies conformes RGPD</li>
+        </ul>
     </div>
+</div>
+
     
-    <!-- Modal 2 -->
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" data-modal="modal2">&times;</span>
-            <h3>Plus de détails sur le Teona Passenger</h3>
-            <p>Explication détaillée sur le Teona Passenger...</p>
-        </div>
+   <!-- Modal 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-modal="modal2">&times;</span>
+        <h3>🎯 Plus de détails sur le projet Teona Passenger</h3>
+
+        <p>
+            Teona Passenger est une application de comparaison de prix dans le domaine du tourisme
+            (vols, hébergements, hôtels, etc.). Le projet est développé en <strong>React</strong>,
+            avec une interface unifiée pour toutes les catégories, une barre de recherche dynamique,
+            et une attention particulière portée à l’expérience utilisateur, à la responsivité et à la performance.
+        </p>
+
+        <h4>🧱 Structure du projet</h4>
+        <ul>
+            <li><strong>Framework Front-end</strong> : React (Vite)</li>
+            <li><strong>Organisation :</strong>
+                <ul>
+                    <li><code>components/</code> : composants réutilisables</li>
+                    <li><code>pages/</code> : sous-dossiers pour chaque catégorie</li>
+                    <li><code>style/</code> : styles globaux (CSS/Tailwind)</li>
+                </ul>
+            </li>
+            <li><strong>Langages</strong> : JavaScript, HTML5, CSS (TailwindCSS)</li>
+            <li><strong>Données</strong> : API fictive ou à venir</li>
+            <li><strong>Routage</strong> : React Router</li>
+        </ul>
+
+        <h4>👤 Fonctionnalités utilisateur</h4>
+        <ul>
+            <li>Navigation fluide entre les pages de catégories</li>
+            <li>Barre de recherche dynamique selon la catégorie</li>
+            <li>Interface cohérente et fluide (Single Page App)</li>
+            <li>Affichage adapté aux écrans desktop et mobile</li>
+            <li>Prévision d’un système de compte utilisateur</li>
+        </ul>
+
+        <h4>🔍 Fonctionnalités de comparaison</h4>
+        <ul>
+            <li>Page d’accueil par défaut : vols</li>
+            <li>Chaque catégorie comprend :
+                <ul>
+                    <li>Page dédiée avec structure unifiée</li>
+                    <li>Barre de recherche spécifique</li>
+                    <li>Résultats simulés (ou connectables à API)</li>
+                </ul>
+            </li>
+            <li>Filtres et tris avancés prévus (prix, durée, avis, etc.)</li>
+        </ul>
+
+        <h4>🖼️ Interface utilisateur</h4>
+        <ul>
+            <li>Design moderne avec TailwindCSS</li>
+            <li>Grilles & Flexbox pour une mise en page fluide</li>
+            <li>Composants réutilisables (Header, Footer, etc.)</li>
+            <li>Police : Inter (Google Fonts)</li>
+            <li>Responsive mobile-first</li>
+        </ul>
+
+        <h4>🧪 Tests & sécurité (à venir)</h4>
+        <ul>
+            <li>Tests unitaires prévus (React Testing Library / Jest)</li>
+            <li>Structure pensée pour modularité & testabilité</li>
+            <li>Respect du principe de séparation des responsabilités</li>
+        </ul>
+
+        <h4>🌐 SEO & Accessibilité</h4>
+        <ul>
+            <li>HTML sémantique (section, article, etc.)</li>
+            <li>Balises <code>&lt;title&gt;</code> et <code>&lt;meta&gt;</code> pour le SEO</li>
+            <li>Accessibilité pensée dès la conception</li>
+        </ul>
+
+        <h4>🚀 Déploiement</h4>
+        <ul>
+            <li>Développement local avec Vite</li>
+            <li>Déploiement prévu : Netlify, Vercel ou Render</li>
+            <li>Connexion future à un CMS ou base distante</li>
+        </ul>
+
+        <h4>🛠️ Fonctionnalités à venir</h4>
+        <ul>
+            <li>Connexion à des APIs réelles (Skyscanner, Booking…)</li>
+            <li>Authentification utilisateur (favoris, historique)</li>
+            <li>Back-office de gestion</li>
+            <li>Thème sombre</li>
+            <li>Filtres dynamiques</li>
+            <li>Traduction multilingue (i18n)</li>
+        </ul>
     </div>
+</div>
+
     
     <!-- Section Contactez-moi -->
 <div class="section" id="contact">

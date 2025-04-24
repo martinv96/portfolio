@@ -400,36 +400,75 @@ p strong {
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
     z-index: 999;
+    overflow-y: auto;
+    padding: 20px;
 }
 
 .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 60%;
-    max-width: 800px;
-    text-align: center;
+    position: relative;
+    background-color: #696666;
+    padding: 30px;
+    margin-top: 1030px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1320px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    animation: fadeInModal 0.3s ease-in-out;
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .close-btn {
     font-size: 2rem;
-    color: #000;
+    color: #333;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 20px;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .close-btn:hover {
     color: #e74c3c;
+}
+
+/* Ajout pour bien structurer le contenu à l’intérieur */
+.modal-content h4 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    color: #2c3e50;
+}
+
+.modal-content ul {
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    list-style-type: disc;
+}
+
+.modal-content ul ul {
+    list-style-type: circle;
+}
+
+.modal-content p {
+    margin-bottom: 1rem;
 }
 
 .section-contact {
@@ -668,5 +707,30 @@ body.dark-theme .btn-submit:hover {
     .btn-contact {
         width: 100%;
         text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        margin-top: 1800px; /* plus raisonnable sur mobile */
+        width: 95%;
+        padding: 20px;
+        font-size: 0.95rem;
+    }
+
+    .modal-content h3,
+    .modal-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content ul {
+        padding-left: 1rem;
+    }
+
+    .close-btn {
+        top: 10px;
+        right: 15px;
+        font-size: 1.5rem;
     }
 }
