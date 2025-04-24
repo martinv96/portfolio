@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <meta name="description" content="Mon portfolio">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="boxed">
+            <div class="flex space-between header-top">
+                <div class="header-left">
+                    <a href="#" class="header-name">Martin</a>
+                    <a href="/" class="header-logo">
+                        <img src="img/moi.jpg" alt="logo">
+                    </a>
+                </div>
+                <ul class="header-menu">
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle-btn">
+                            <img id="theme-icon" src="icons/header/sun.svg" alt="Changer de thème" />
+                        </button>
+                    </li>
+                </ul>
+                
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <img src="img/developpeur-web.avif" alt="Developpeur web" class="slider__img">
+        <img src="img/moi.jpg" alt="profil" class="profile_img">
+        <div class="slider_content">
+            <h1>Martin VALLEE</h1>
+            <p>Développeur web full-stack</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="boxend">
+            <div class="flex">
+                <div class="w40">
+                    <img src="img/moi.jpg" alt="Martin" class="about-img">
+                </div>
+                <div class="w60" id="about">
+                    <h2>A propos de moi</h2>
+                    <p>
+                        Je m'appelle Martin, j'ai 28 ans et je suis développeur web et web mobile récemment diplômé. Après une reconversion professionnelle, j'ai choisi de me former aux technologies du web et je suis maintenant prêt à débuter ma carrière en tant que développeur junior.
+                    </p>
+                    <p>
+                        Au cours de ma formation, j'ai travaillé sur plusieurs projets passionnants, dont deux principaux : <strong>EasyDealz</strong> et <strong>Teona Passenger</strong>. Ces projets m'ont permis de perfectionner mes compétences en Symfony, React, PHP et bien plus encore.
+                    </p>
+                    <p>
+                        Aujourd'hui, je suis à la recherche de nouvelles opportunités professionnelles, où je pourrai contribuer à des projets innovants et continuer à me perfectionner.
+                    </p>
+                    <a href="mailto:contact@example.com" class="btn-contact">Contactez-moi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="sectiondark">
+        <div class="boxenddark">
+            <h2>Mes compétences</h2>
+        </div>
+        <div class="tech-cards" id="competences">
+            <div class="tech-card">
+                <img src="icons/icons8-html.svg" alt="HTML">
+                <h3>Langages</h3>
+                <ul>
+                    <li> <img src="icons/icons8-html.svg" alt="HTML"> HTML</li>
+                    <li> <img src="icons/icons8-css.svg" alt="CSS"> CSS</li>
+                    <li> <img src="icons/icons8-js.svg" alt="JS"> JavaScript</li>
+                    <li> <img src="icons/icons8-php.svg" alt="PHP"> PHP</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <img src="icons/icons8-symfony.svg" alt="Symfony">
+                <h3>Frameworks et Bibliothèques</h3>
+                <ul>
+                    <li> <img src="icons/icons8-symfony.svg" alt="Symfony"> Symfony</li>
+                    <li> <img src="icons/icons8-réagir.svg" alt="react"> React</li>
+                    <li> <img src="icons/icons8-bootstrap.svg" alt="bootstrap"> Bootstrap</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <img src="icons/icons8-code-studio-visuel-2019.svg" alt="VS Code">
+                <h3>Outils</h3>
+                <ul>
+                    <li> <img src="icons/icons8-code-studio-visuel-2019.svg" alt="VS Code"> VS Code</li>
+                    <li> <img src="icons/icons8-mysql.svg" alt="MySQL"> MySQL</li>
+                    <li> <img src="icons/icons8-docker.svg" alt="docker">Docker</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="section">
+        <div class="boxend">
+            <h2>Mes projets</h2>
+            <div class="projets" id="projets">
+                <!-- Première carte -->
+                <div class="card">
+                    <img src="img/projets/easydealz.JPG" alt="Easydealz" class="project-img">
+                    <div class="card-content">
+                        <h3>Easydealz</h3>
+                        <p>Une brève description du Easydealz.</p>
+                        <button class="btn-view-more" data-modal="modal1">Voir plus</button>
+                    </div>
+                </div>
+        
+                <!-- Deuxième carte -->
+                <div class="card">
+                    <img src="img/projets/teona.JPG" alt="Teona Passenger" class="project-img">
+                    <div class="card-content">
+                        <h3>Teona Passenger</h3>
+                        <p>Une brève description du Teona Passenger.</p>
+                        <button class="btn-view-more" data-modal="modal2">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="modal1">&times;</span>
+            <h3>Plus de détails sur le Easydealz</h3>
+            <p>Explication détaillée sur le Easydealz...</p>
+        </div>
+    </div>
+    
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="modal2">&times;</span>
+            <h3>Plus de détails sur le Teona Passenger</h3>
+            <p>Explication détaillée sur le Teona Passenger...</p>
+        </div>
+    </div>
+    
+    <!-- Section Contactez-moi -->
+<div class="section" id="contact">
+    <div class="boxend">
+        <h2>Contactez-moi</h2>
+        <form action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+
+    <div class="section-contact">
+        <a href="#competences">
+            <img src="icons/header/icons8-livre.svg" alt="Livre">
+        </a>
+        <a href="#contact">
+            <img src="icons/header/icons8-gmail.svg" alt="Gmail">
+        </a>
+        <a href="#projets">
+            <img src="icons/header/icons8-mallette.svg" alt="Mallette">
+        </a>
+        <a href="#about">
+            <img src="icons/header/icons8-utilisateur-masculin.svg" alt="Utilisateur">
+        </a>
+    </div>
+
+
+
+</body>
+
+<script src="js/app.js"></script>
+
+</html>
