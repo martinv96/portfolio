@@ -75,32 +75,97 @@
                 <img src="icons/icons8-html.svg" alt="HTML">
                 <h3>Langages</h3>
                 <ul>
-                    <li> <img src="icons/icons8-html.svg" alt="HTML"> HTML</li>
-                    <li> <img src="icons/icons8-css.svg" alt="CSS"> CSS</li>
-                    <li> <img src="icons/icons8-js.svg" alt="JS"> JavaScript</li>
-                    <li> <img src="icons/icons8-php.svg" alt="PHP"> PHP</li>
+                    <li> <img src="icons/icons8-html.svg" alt="HTML"> HTML <span class="stars">⭐⭐⭐⭐✰</span></li>
+                    <li> <img src="icons/icons8-css.svg" alt="CSS"> CSS <span class="stars">⭐⭐⭐⭐✰</span> </li>
+                    <li> <img src="icons/icons8-js.svg" alt="JS"> JavaScript <span class="stars">⭐⭐⭐✰ ✰</span></li>
+                    <li> <img src="icons/icons8-php.svg" alt="PHP"> PHP<span class="stars">⭐⭐⭐⭐✰</span> </li>
                 </ul>
             </div>
             <div class="tech-card">
                 <img src="icons/icons8-symfony.svg" alt="Symfony">
                 <h3>Frameworks et Bibliothèques</h3>
                 <ul>
-                    <li> <img src="icons/icons8-symfony.svg" alt="Symfony"> Symfony</li>
-                    <li> <img src="icons/icons8-réagir.svg" alt="react"> React</li>
-                    <li> <img src="icons/icons8-bootstrap.svg" alt="bootstrap"> Bootstrap</li>
+                    <li> <img src="icons/icons8-symfony.svg" alt="Symfony"> Symfony ⭐⭐⭐⭐✰</li>
+                    <li> <img src="icons/icons8-réagir.svg" alt="react"> React ⭐⭐⭐✰ ✰ </li>
+                    <li> <img src="icons/icons8-bootstrap.svg" alt="bootstrap"> Bootstrap ⭐⭐⭐⭐✰</li>
                 </ul>
             </div>
             <div class="tech-card">
                 <img src="icons/icons8-code-studio-visuel-2019.svg" alt="VS Code">
                 <h3>Outils</h3>
                 <ul>
-                    <li> <img src="icons/icons8-code-studio-visuel-2019.svg" alt="VS Code"> VS Code</li>
-                    <li> <img src="icons/icons8-mysql.svg" alt="MySQL"> MySQL</li>
-                    <li> <img src="icons/icons8-docker.svg" alt="docker">Docker</li>
+                    <li> <img src="icons/icons8-code-studio-visuel-2019.svg" alt="VS Code"> VS Code ⭐⭐⭐⭐✰</li>
+                    <li> <img src="icons/icons8-mysql.svg" alt="MySQL"> MySQL ⭐⭐⭐⭐✰</li>
+                    <li> <img src="icons/icons8-docker.svg" alt="docker">Docker ⭐⭐⭐✰ ✰</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <div class="section">
+        <div class="boxend">
+            <h2>Mon parcours</h2>
+    
+            <!-- Filtres -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="formation">Formations</button>
+                <button class="filter-btn" data-filter="experience">Expériences</button>
+            </div>
+    
+            <!-- Cartes parcours -->
+            <div class="parcours-cards" id="parcours">
+                <!-- Carte Formation -->
+                <div class="card-parcours formation">
+                    <h3>BTS MS (Maintenance Des Systèmes)</h3>
+                    <p>📍 Lycée Condorcet, Montreuil</p>
+                    <button class="btn-more" data-modal="modalFormation1">Voir plus</button>
+                </div>
+
+                <!-- Carte Formation -->
+                <div class="card-parcours formation">
+                    <h3>BTS ATI (Assistance Technique D’Ingénieur)</h3>
+                    <p>📍 Lycée Martin Luther King, Bussy-Saint-Georges</p>
+                    <button class="btn-more" data-modal="modalFormation2">Voir plus</button>
+                </div>
+
+                <!-- Carte Formation -->
+                <div class="card-parcours formation">
+                    <h3>Licence professionnelle Management Par Projet</h3>
+                    <p>📍 CFA (Centre de Formation d’Apprentissage) Cabrini, Noisy-Le-Grand</p>
+                    <button class="btn-more" data-modal="modalFormation3">Voir plus</button>
+                </div>
+    
+                <!-- Carte Formation -->
+                <div class="card-parcours formation">
+                    <h3>Developpeur Web & Web Mobile</h3>
+                    <p>📍 Doranco, Boulogne-Billancourt</p>
+                    <button class="btn-more" data-modal="modalFormation4">Voir plus</button>
+                </div>
+    
+                <!-- Carte Expérience -->
+                <div class="card-parcours experience">
+                    <h3>Développeur stagiaire</h3>
+                    <p>📍 Teona Passenger</p>
+                    <button class="btn-more" data-modal="modalExp1">Voir plus</button>
+                </div>
+    
+                <!-- Carte Expérience -->
+                <div class="card-parcours experience">
+                    <h3>EasyDealz - Projet personnel</h3>
+                    <p>📍 Freelance</p>
+                    <button class="btn-more" data-modal="modalExp2">Voir plus</button>
+                </div>
+
+                <!-- Carte Expérience -->
+                <div class="card-parcours experience">
+                    <h3>Assistant chef de projet</h3>
+                    <p>📍 DGFIP (Direction Générale des Finances Publiques), Noisy-Le-Grand</p>
+                    <button class="btn-more" data-modal="modalExp3">Voir plus</button>
+            </div>
+        </div>
+    </div>
+    
     
 
     <div class="section">
@@ -305,6 +370,127 @@
         </ul>
     </div>
 </div>
+
+
+<!-- Modal Formation 1 -->
+<div id="modalFormation1" class="modal">
+    <div class="modal-content2">
+        <span class="close-btn" data-modal="modalFormation1">&times;</span>
+        <h3>BTS MS (Maintenance Des Systèmes)</h3>
+        <h4>Septembre 2016 - Juin 2018</h4>
+        <ul><li>Réparer et améliorer les équipements  </li> 
+            <li>Anticiper les dysfonctionnements  </li>
+            <li>Bonne connaissance des systèmes automatisés et des 
+                équipements électriques et mécanique  </li> 
+            <li>Maitrise des méthodes de maintenance préventive et 
+                corrective </li>
+            <li> Compétences technologiques, organisationnelles et 
+                relationnelles</li>  </ul>
+    </div>
+</div>
+
+<!-- Modal Formation 2 -->
+<div id="modalFormation2" class="modal">
+    <div class="modal-content2">
+        <span class="close-btn" data-modal="modalFormation2">&times;</span>
+        <h3>BTS ATI (Assistance Technique D’Ingénieur)</h3>
+        <h4>Septembre 2018 - Juin 2020</h4>
+        <ul>
+            <li>Conception des spécifications générales d’un système pluritechnologique</li>
+                <li>Réalisation d’un dossier technique d’assistance d’ingénieur en entreprise</li>
+                <li>Réalisation d’activités d’assistance technique</li>
+                <li>Vérifications des performances mécaniques et électriques d’un système pluritechnologique</li>
+                <li>Mise en œuvre de mesures et/ou contrôles à caractère industriel</li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Modal Formation 3 -->
+<div id="modalFormation3" class="modal">
+    <div class="modal-content2">
+        <span class="close-btn" data-modal="modalFormation2">&times;</span>
+        <h3>Licence professionnelle Management Par Projet</h3>
+        <h4>Septembre 2020 - Aout 2022</h4>
+        <ul>
+            <li>Analyse des opportunités d’efficience</li>
+            <li>Gestion de la phase opérationnelle des projets</li>
+            <li>Coordination avec différents services (marketing, communication, etc.)</li>
+            <li>Mise en place de nouveaux procédés ou démarches</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal Formation 4 -->
+<div id="modalFormation4" class="modal">
+    <div class="modal-content2">
+        <span class="close-btn" data-modal="modalFormation2">&times;</span>
+        <h3>Développeur Web & Web Mobile - Doranco</h3>
+        <h4>Mai 2024 - Février 2025</h4>
+        <p>Formation intensive couvrant PHP, Symfony, React, MySQL, JavaScript, sécurité, et bonnes pratiques de développement web.</p>
+    </div>
+</div>
+
+<!-- Modal Expérience 1 -->
+<div id="modalExp1" class="modal">
+    <div class="modal-content2">
+        <span class="close-btn" data-modal="modalExp1">&times;</span>
+        <h3>Développeur stagiaire - Teona Passenger</h3>
+        <p>Développement React, gestion de pages dynamiques, intégration de cartes interactives, connexion à des API REST.</p>
+    </div>
+</div>
+
+<!-- Modal Expérience 2 -->
+<div id="modalExp2" class="modal">
+    <div class="modal-content2">
+        <span class="close-btn" data-modal="modalExp2">&times;</span>
+        <h3>EasyDealz</h3>
+        <p>Projet complet de e-commerce avec Symfony, gestion des utilisateurs, design responsif, fonctionnalités avancées (filtrage, collections, etc).</p>
+    </div>
+</div>
+
+<!-- Modal Expérience 3 -->
+<div id="modalExp3" class="modal">
+    <div class="modal-content2">
+        <span class="close-btn" data-modal="modalExp2">&times;</span>
+        <h3>Assistant Chef de Projet</h3>
+        <p>
+            Direction des Projets Numériques (DPN)<br>
+            Bureau du Service Informatique des particuliers (BSI4) - Division Taxe d'Habitation<br>
+            Gérer Mes Biens Immobiliers (GMBI) : Maîtrise d’ouvrage du projet GMBI.
+        </p>
+        <ul>
+            <li><strong>Assistance à la conception :</strong>
+                <ul>
+                    <li>Participation à la création d'un référentiel pour deux nouvelles applications : GestODL et Téléphon</li>
+                    <li>Élaboration d'un fichier d'aide au codage : Référentiel de l’Occupation des Locaux (R-ODL)</li>
+                </ul>
+            </li>
+            <li><strong>Assistance au pilotage :</strong>
+                <ul>
+                    <li>Gestion du fichier de suivi budgétaire de l'équipe Taxe d'Habitation (TH)</li>
+                    <li>Proposition d'amélioration des outils de pilotage</li>
+                    <li>Amélioration du fichier de suivi budgétaire</li>
+                    <li>Élaboration du planning détaillé du projet avec le chef de projet</li>
+                    <li>Création de tableaux de bord</li>
+                </ul>
+            </li>
+            <li><strong>Assistance administrative :</strong>
+                <ul>
+                    <li>Participation au recrutement de nouveaux développeurs contractuels</li>
+                </ul>
+            </li>
+            <li><strong>Applications / Logiciels :</strong>
+                <ul>
+                    <li>Bureautique</li>
+                    <li>OnePoint (Gestion planning et missions des membres du projet)</li>
+                    <li>MS Project (Logiciel de management de projet)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
 
     
     <!-- Section Contactez-moi -->

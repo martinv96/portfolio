@@ -1,6 +1,6 @@
 console.log("Hello World");
 
-document.querySelectorAll('.btn-view-more').forEach(button => {
+document.querySelectorAll('.btn-more, .btn-view-more').forEach(button => {
     button.addEventListener('click', function() {
         const modalId = this.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
@@ -63,3 +63,79 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+
+// Animation d'entrée au chargement
+window.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card-parcours');
+
+    cards.forEach(card => {
+        card.style.display = 'block'; // Affiche tout au début
+    });
+
+    // Forcer un reflow pour permettre l’animation
+    void document.body.offsetWidth;
+
+    cards.forEach(card => {
+        card.classList.add('fade-in');
+    });
+});
+
+// Animation lors du filtre
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        const cards = document.querySelectorAll('.card-parcours');
+
+        // Fade-out tous
+        cards.forEach(card => {
+            card.classList.remove('fade-in');
+            card.classList.add('fade-out');
+        });
+
+        setTimeout(() => {
+            cards.forEach(card => {
+                const shouldShow = (filter === 'all' || card.classList.contains(filter));
+                card.style.display = shouldShow ? 'block' : 'none';
+            });
+
+            void document.body.offsetWidth; // reflow
+
+            cards.forEach(card => {
+                const shouldShow = (filter === 'all' || card.classList.contains(filter));
+                if (shouldShow) {
+                    card.classList.remove('fade-out');
+                    card.classList.add('fade-in');
+                }
+            });
+        }, 400);
+    });
+});
+
+
+
+
+
+    document.querySelectorAll('.btn-view-more').forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = 'block';
+        });
+    });
+
+    document.querySelectorAll('.close-btn').forEach(close => {
+        close.addEventListener('click', () => {
+            const modalId = close.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = 'none';
+        });
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
+    });
