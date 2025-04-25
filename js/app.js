@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             themeIcon.src = 'icons/header/sun.svg'; // Icône soleil pour le thème clair
             themeIcon.alt = 'Passer au thème sombre';
         } else {
-            themeIcon.src = 'icons/header/moon.svg'; // Icône lune pour le thème sombre
+            themeIcon.src = 'icons/header/sun2.svg'; // Icône lune pour le thème sombre
             themeIcon.alt = 'Passer au thème clair';
         }
     }
