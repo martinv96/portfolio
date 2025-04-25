@@ -548,6 +548,20 @@ p strong {
     animation: fadeInModal 0.3s ease-in-out;
 }
 
+.modal-content3 {
+    position: relative;
+    background-color: #c5c5c5;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1320px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    animation: fadeInModal 0.3s ease-in-out;
+}
+
 body.light-theme .modal-content {
     background-color: #fefefe;
     color: #333;
@@ -564,6 +578,16 @@ body.light-theme .modal-content2 {
 }
 
 body.dark-theme .modal-content2 {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+}
+
+body.light-theme .modal-content3 {
+    background-color: #fefefe;
+    color: #333;
+}
+
+body.dark-theme .modal-content3 {
     background-color: #2a2a2a;
     color: #f1f1f1;
 }
@@ -857,7 +881,7 @@ body.dark-theme .btn-submit:hover {
     .btn-more {
         position: fixed;
         top: 143px;
-        right: 125px;
+        right: 135px;
     }
 }
 
@@ -872,6 +896,10 @@ body.dark-theme .btn-submit:hover {
 
     .modal-content2 {
         margin-top: 460px; /* plus raisonnable sur mobile */
+    }
+
+    .modal-content3 {
+        margin-top: 30px; /* plus raisonnable sur mobile */
     }
 
     .modal-content h3,
