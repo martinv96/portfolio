@@ -523,7 +523,7 @@ p strong {
     position: relative;
     background-color: #c5c5c5;
     padding: 30px;
-    margin-top: 1030px;
+    margin-top: 30px;
     border-radius: 12px;
     width: 90%;
     max-width: 1320px;
@@ -538,7 +538,6 @@ p strong {
     position: relative;
     background-color: #c5c5c5;
     padding: 30px;
-    
     border-radius: 12px;
     width: 90%;
     max-width: 1320px;
@@ -858,17 +857,21 @@ body.dark-theme .btn-submit:hover {
     .btn-more {
         position: fixed;
         top: 143px;
-        right: 130px;
+        right: 120px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
     .modal-content {
-        margin-top: 1800px; /* plus raisonnable sur mobile */
+        margin-top: 30px; /* plus raisonnable sur mobile */
         width: 95%;
         padding: 20px;
         font-size: 0.95rem;
+    }
+
+    .modal-content2 {
+        margin-top: 460px; /* plus raisonnable sur mobile */
     }
 
     .modal-content h3,
